@@ -26,7 +26,6 @@ public class convertirGradosResuelto {
 		}
 		
 		System.out.println(resultado);
-		entrada.close();
 		
 	}
 

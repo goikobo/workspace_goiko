@@ -8,7 +8,7 @@ public class convertirGradosResuelto {
 		Scanner entrada = new Scanner(System.in);
 		String tipo;
 		float resultado;
-		//controla que el numero introducido este entre 0 y 100
+		//controla que el numero introducito este entre 0 y 100
 		do{
 			System.out.println("Introduce temperatura");
 			temp = entrada.nextFloat();
@@ -26,7 +26,6 @@ public class convertirGradosResuelto {
 		}
 		
 		System.out.println(resultado);
-		entrada.close();
 		
 	}
 

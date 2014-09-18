@@ -16,7 +16,6 @@ public class convertirGrados {
 
 		float celsius =  ((grados - 32)/36)/2;
 		System.out.println("El número dado son "+ far+" grados Farenheit y "+celsius+" grados celsius");
-		entrada.close();
 	}
 	/*
 	 * do {

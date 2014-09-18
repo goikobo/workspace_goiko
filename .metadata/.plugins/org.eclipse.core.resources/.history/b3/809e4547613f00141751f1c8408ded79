@@ -10,8 +10,8 @@ int num;
 int temp;
 do {
 	System.out.println("introduce un numero de 5 cifras");
-	num = entrada.nextIn();
-}while (num<10000 || num > 99999);
+	int num = entrada.nextIn();
+}while (num<10000 || num > 99999)
 	System.out.println(num/10000);
 	temp = num % 10000;
 	System.out.println(temp/1000);
