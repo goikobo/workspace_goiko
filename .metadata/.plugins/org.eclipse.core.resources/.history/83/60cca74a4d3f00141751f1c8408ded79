@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+
+public class ordenar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+// ejercicio: pide 3 números y los ordenad de mayor a menor.
+		
+	int num1;
+	int num2;
+	int num3; 
+	int cont = 2;
+	Scanner entrada = new Scanner(System.in);
+	while (cont <3){
+		System.out.println("Introduce el numero "+cont+1);
+		cont = cont +1; // esto es lo mismo cont++;
+		
+	}
+	}
+
+}

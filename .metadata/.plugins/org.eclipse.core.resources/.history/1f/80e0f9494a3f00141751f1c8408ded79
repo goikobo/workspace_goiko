@@ -1,0 +1,16 @@
+
+public class bucles {
+
+	public static void main(String[] args) {
+		// bucles (while / for) 
+		int cont = 0;
+		while (cont <10){
+			System.out.println("hola"+cont);
+			cont = cont +1; // esto es lo mismo cont++;
+		}
+
+		
+
+	}
+
+}

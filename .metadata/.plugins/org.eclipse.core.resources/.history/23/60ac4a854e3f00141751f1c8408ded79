@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+
+public class ordenar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+// ejercicio: pide 3 números y los ordenad de mayor a menor.
+		
+	int cont = 2;
+	Scanner entrada = new Scanner(System.in);
+	while (cont <3){
+		cont = cont +1;
+		System.out.println("Te voy a pedir "+cont+" números");
+		cont = cont -1;
+		System.out.println("Introduce el numero "+cont);
+		cont = entrada.nextInt();
+		cont = cont +1; // esto es lo mismo cont++;
+		
+	}
+	}
+
+}

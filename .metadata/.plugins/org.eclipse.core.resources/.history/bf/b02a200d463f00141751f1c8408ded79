@@ -1,0 +1,10 @@
+
+public class pregunta_edad {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int edad = 0; 
+
+	}
+
+}

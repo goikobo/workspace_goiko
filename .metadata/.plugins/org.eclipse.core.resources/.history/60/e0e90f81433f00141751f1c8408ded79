@@ -1,0 +1,18 @@
+public class condicionalesIf {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//esto es un comentario
+/*
+ * En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que había un
+ *  hidalgo de los de lanza en astillero, adarga antigua y galgo corredor. 
+ */
+		if (op == '+'){
+			System.out.println("ESto es una suma");
+			
+		}else if (op == '-'){
+			System.out.println("Esto es una resta");
+		}
+	}
+
+}
