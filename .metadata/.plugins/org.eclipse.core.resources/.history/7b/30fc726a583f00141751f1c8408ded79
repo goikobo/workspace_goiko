@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+
+public class convertirGrados {
+// hay que controlar que el numero introducido este entre 0 y 100
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner entrada = new Scanner (System.in);
+		float grados = entrada.nextFloat();
+		while (grados <101 && grados >0){
+			System.out.println("Introduce un número entre 0 y 100");
+		}
+		float far = 32 + (9* grados / 5);
+
+		float celsius =  ((grados - 32)/36)/2;
+		System.out.println("El número dado son "+ far+" grados Farenheit y "+celsius+" grados celsius");
+	}
+
+}
