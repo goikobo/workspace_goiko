@@ -16,7 +16,7 @@ public class validarDNI {
 		letraDNI= entrada.charAt(9);
 		
 	
-		
+		entrada.close();	
 		
 	}
 

@@ -1,5 +1,5 @@
 
-public class ValidarDNI2 {
+public class validarDNIResuelto2 {
 
 	public static void main(String[] args) {
 		String letras = "TRWAGMYFPDXBNJZSQVHLCKE";
