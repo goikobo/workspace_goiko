@@ -3,17 +3,17 @@ public class matrizMedias {
 	
 	/*
 	 * Devolver para cada fila:
-	 * 		- el máximo
-	 * 		- el mínimo
+	 * 		- el mï¿½ximo
+	 * 		- el mï¿½nimo
 	 * 		- la media
-	 * La máxima de todas las medias
-	 * El máximo y el mínimo de la matriz
+	 * La mï¿½xima de todas las medias
+	 * El mï¿½ximo y el mï¿½nimo de la matriz
 	 * La media de toda la matriz
 	 * 
 	 * */
 	public static void main(String[] args) {
 				
-				//en el array matriz guardo todos los números
+		//en el array matriz guardo todos los nï¿½meros
 		int[][] matriz = new int[10][10];
 		
 		//utilizo tres arrays para guardar los 
@@ -29,7 +29,7 @@ public class matrizMedias {
 			}
 		}
 		
-		//recorro las filas de la matriz calculando maximos, mínimos y medias
+		//recorro las filas de la matriz calculando maximos, mï¿½nimos y medias
 		for (int i=0;i<10;i++){
 			arrayMaximos[i] = Integer.MIN_VALUE;
 			arrayMinimos[i] = Integer.MAX_VALUE;
@@ -62,7 +62,7 @@ public class matrizMedias {
 				maxMed = arrayMedias[i];
 			}
 		}
-		System.out.println("La máxima de las medias es: "+ maxMed);
+		System.out.println("La mï¿½xima de las medias es: "+ maxMed);
 		
 		int maxMax = Integer.MIN_VALUE;
 		for (int i=0;i<10;i++){
@@ -70,7 +70,7 @@ public class matrizMedias {
 				maxMax = arrayMaximos[i];
 			}
 		}
-		System.out.println("El máximo de la matriz es: "+ maxMax);
+		System.out.println("El mï¿½ximo de la matriz es: "+ maxMax);
 		
 		int minMin = Integer.MAX_VALUE;
 		for (int i=0;i<10;i++){
@@ -78,7 +78,7 @@ public class matrizMedias {
 				minMin = arrayMinimos[i];
 			}
 		}
-		System.out.println("El mínimo de la matriz es: "+ minMin);
+		System.out.println("El mï¿½nimo de la matriz es: "+ minMin);
 		
 		int medMed = 0;
 		for (int i=0;i<10;i++){
