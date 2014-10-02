@@ -1,7 +1,9 @@
+import javax.print.attribute.standard.Media;
+
 
 public class funcMatrizMaxMinMed {
-	
-	public static int maximo(int[]vector){
+
+	public static int maximo(int[] vector){
 		//funcion que busca el valor máximo en un array unidimensional
 		int result = Integer.MIN_VALUE;
 		for (int i=0;i<vector.length;i++){
@@ -25,21 +27,24 @@ public class funcMatrizMaxMinMed {
 	public static int media(int[]vector){
 		//funcion que saca el valor medio del array
 		int medMed = 0;
-		for (int i= 0;i>vector.length;i++){
+		for (int i= 0;i<vector.length;i++){
 			medMed = medMed + vector[i];
 		}
-		//return (medMed/vector.length);
-		return medMed;
+		return (medMed/vector.length);
+		//return medMed;
 	}
 
 	public static void main(String[] args) {
 
+		int[] vmaximo = new int[10];
+		int[] vminimo = new int[10];
+		int[] vmedia = new int[10];
 		// declaramos la matriz 10x10
 		int[][] matriz = new int[10][10];
 		// llenamos la matriz con datos aleatorios.
 		for (int i=0;i<10;i++){
 			for (int j=0;j<10;j++){
-				matriz[i][j] = (int)(Math.random()*31);
+				matriz[i][j] = (int)(Math.random()*101);
 			}
 		}
 
@@ -60,13 +65,18 @@ public class funcMatrizMaxMinMed {
 				System.out.print(matriz[i][j]+" ");
 			}
 			System.out.println();
-			int vmaximo = maximo(matriz[i]);
-			int vminimo = minimo(matriz[i]);
-			int vmedia = media(matriz[i]);
-			double mediavector = vmedia/10;
-			System.out.println("máximo: " + vmaximo+" mínimo: "+ vminimo+" media: "+ mediavector);
+
+			vmaximo[i] = maximo(matriz[i]);
+			vminimo[i] = minimo(matriz[i]);
+			vmedia[i] = media(matriz[i]);
+			System.out.println("máximo: " + vmaximo[i]+" mínimo: "+ vminimo[i]+" media: "+ vmedia[i]);
 			System.out.println();
 		}
-	}
+			int tmaximo = maximo(vmaximo);
+			int	tminimo= minimo(vminimo);
+			int tmedia = media(vmedia);
+			System.out.println("maximo total: "+tmaximo+" minimo total: "+tminimo+" media total: "+ tmedia);
 
-}
+
+}	
+	}
