@@ -1,3 +1,12 @@
+/*
+ * 1.- Máximo común divisor y mínimo común múltiplo de dos números
+ * En matemáticas, se define el máximo común divisor(MCD) de dos o más números enteros al mayor número entero
+ *  que los divide sin dejar resto.
+ *  
+ *  En matemáticas, el mínimo común múltiplo (abreviado m.c.m), de dos o más números naturales es el menor
+ *  número natural que es múltiplo de todos ellos. Sólo se aplica con números naturales, es decir, no se usan 
+ *  decimales, números negativos o números complejos.
+ */
 public class main {
 	
 
