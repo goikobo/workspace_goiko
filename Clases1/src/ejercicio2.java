@@ -10,6 +10,14 @@ public class ejercicio2 {
 		Scanner entrada  = new Scanner(System.in);
 		for (int i=0; i<3; i++){
 			//por cada posición del array tengo que indicarle qué tipo de objeto es (persona)
+
+			/* Persona persona = new Persona();
+			 * Persona persona = new Persona();
+			 * persona.nombre =entrada.nextLine();
+			 * persona.apellidos = entrada.nextLine();
+			 * persona.edad = entrda.nextInt();
+			 * arrayPersonas[i]=persona;
+			 */
 			arrayPersonas[i] = new Persona();
 			System.out.println("Introduce el nombre "+ i);
 			arrayPersonas[i].nombre = entrada.next();
