@@ -1,4 +1,7 @@
-
+// usa la clase Empleado
+/*
+ * Se trata de indicar un empleado y, en función de su puesto de trabajo, calcular un sobresueldo.
+ */
 public class ejer2Empleados {
 
 	public static void main(String[] args) {
