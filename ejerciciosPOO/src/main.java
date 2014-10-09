@@ -55,7 +55,9 @@ public class main {
 			System.out.println("p3 Menor de edad");
 		}
 		
-		
+		for (int i=1; i<4;i++){
+			System.out.println(p[i].getNombre()+"tiene "+p[i].getEdad());
+		}
 		
 		
 		entrada.close();
