@@ -3,7 +3,7 @@ import java.util.Random;
 
 public class Persona {
 	// si las declaramos public, serán accesibles sin problemas. Si las ponemos en private, tendremos que usar "getters" y "setters"
-	private String nombre;
+	protected String nombre; // protected : pueden acceder los del mismo constructor y sus hijos.
 	private int edad;
 	private String dNI;
 	private char sexo;
