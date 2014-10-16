@@ -45,16 +45,14 @@ public class Serie implements Entregable {
 
 
 	public Serie(String titulo, String creador) {
+		this();
 		this.titulo = titulo;
 		this.creador = creador;
-		this.ntemporadas = 0;
-		this.entregado = false;
-		this.genero = "";
 	}
 	
 	public Serie() {
 		this.titulo = "";
-		this.ntemporadas = 0;
+		this.ntemporadas = 3;
 		this.entregado = false;
 		this.genero = "";
 		this.creador = "";
@@ -136,37 +134,41 @@ public class Serie implements Entregable {
 
 
 	@Override
-	public boolean entregar() {
+	public void entregar() {
 		// TODO Auto-generated method stub
-		return false;
+		this.entregado = true;
+		
 	}
 
 
 	@Override
-	public boolean devolver() {
+	public void devolver() {
 		// TODO Auto-generated method stub
-		return false;
+		this.entregado = false;
 	}
 
 
 	@Override
 	public boolean isEntregado() {
 		// TODO Auto-generated method stub
-		return false;
+		return this.entregado;
 	}
 
 
-	@Override
-	public boolean compareTo() {
-		// TODO Auto-generated method stub
-		return false;
-	}
+
 
 
 	@Override
 	public String setTitulo() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+
+	@Override
+	public int compareTo(Object a) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }

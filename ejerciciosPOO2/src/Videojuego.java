@@ -51,7 +51,7 @@ public class Videojuego implements Entregable {
 	}
 
 	public Videojuego(String titulo, int horas) {
-
+		this();
 		this.titulo = titulo;
 		this.horas = horas;
 		
@@ -131,33 +131,34 @@ public class Videojuego implements Entregable {
 	}
 
 	@Override
-	public boolean entregar() {
-		// TODO Auto-generated method stub
-		return false;
+	public void entregar() {
+		this.entregado = true;
+		
 	}
 
 	@Override
-	public boolean devolver() {
-		// TODO Auto-generated method stub
-		return false;
+	public void devolver() {
+		this.entregado = false;
+		
 	}
 
 	@Override
 	public boolean isEntregado() {
-		// TODO Auto-generated method stub
-		return false;
+	
+		return this.entregado;
 	}
 
-	@Override
-	public boolean compareTo() {
-		// TODO Auto-generated method stub
-		return false;
-	}
 
 	@Override
 	public String setTitulo() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public int compareTo(Object a) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 

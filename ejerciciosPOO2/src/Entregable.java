@@ -11,10 +11,10 @@
  */
 
 public interface Entregable {
-	boolean entregar();
-	boolean devolver();
+	void entregar();
+	void devolver();
 	boolean isEntregado();
-	boolean compareTo();
+	int compareTo(Object a);
 	String getTitulo();
 	String setTitulo();
 	

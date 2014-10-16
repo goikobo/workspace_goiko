@@ -15,24 +15,30 @@ Por último, indica el Videojuego tiene más horas estimadas y la serie con mas te
 public class principal {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
-		Entregable[] arraySeries = new Serie[5];
+
+		Entregable[] arraySeries = new Serie[5]; //interfaz[] objeto = new nombre_variable[]
 		Entregable[] arrayVideojuegos = new Videojuego[5];
 		
 
 		arraySeries[0] = new Serie("Falling Skies", 4, "sci-fi", "Josh Wedon");
 		arraySeries[1] = new Serie("Falling Skies", 4, "sci-fi", "Josh Wedon");
 		arraySeries[2] = new Serie("Falling Skies", 4, "sci-fi", "Josh Wedon");
-		arraySeries[3] = new Serie("Falling Skies", 4, "sci-fi", "Josh Wedon");
-		arraySeries[4] = new Serie("Falling Skies", 4, "sci-fi", "Josh Wedon");
+		arraySeries[3] = new Serie("Falleing Skies", "Josh Wedon");
+		arraySeries[4] = new Serie();
 		
-		arrayVideojuegos[0] = new Serie("doom", 10, "terror", "id-software");
-		arrayVideojuegos[1] = new Serie("doom", 10, "terror", "id-software");
-		arrayVideojuegos[2] = new Serie("doom", 10, "terror", "id-software");
-		arrayVideojuegos[3] = new Serie("doom", 10, "terror", "id-software");
-		arrayVideojuegos[4] = new Serie("doom", 10, "terror", "id-software");
+		arrayVideojuegos[0] = new Videojuego("doom", 10, "terror", "id-software");
+		arrayVideojuegos[1] = new Videojuego("doom", 10, "terror", "id-software");
+		arrayVideojuegos[2] = new Videojuego("doom", 10, "terror", "id-software");
+		arrayVideojuegos[3] = new Videojuego("doom", 10, "terror", "id-software");
+		arrayVideojuegos[4] = new Videojuego();
 		
+		for (int i = 0; i<5;i++){
+			if (arraySeries[i].isEntregado()){
+				//Serie s = (Serie)arraySeries[i];
+				System.out.println(arraySeries[i].getTitulo());
+			}
+		}
 		
 		
 		
