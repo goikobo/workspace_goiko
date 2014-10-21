@@ -1,3 +1,4 @@
+package Figuras;
 
 public class Cuadrado implements Figura {
 	
