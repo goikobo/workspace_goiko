@@ -13,7 +13,7 @@ public class validarCuentaBancaria {
 		int valorofi = 0;
 		int dc1;
 		int dc2;
-		int dc=cuenta.substring(11,12);
+		String dc=cuenta.substring(11,12);
 		
 		for (int i = 0; i<peso.length; i++){
 			// convertir cada caracgter a valor numerico -> character.getnumericvalue(oficina.cahrat(i)
